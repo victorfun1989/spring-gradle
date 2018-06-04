@@ -84,6 +84,7 @@ if [ -z "$JAVACMD" ] ; then
 fi
 if [ ! -x "$JAVACMD" ] ; then
     die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
+
 Please set the JAVA_HOME variable in your environment to match the
 location of your Java installation."
 fi
@@ -142,7 +143,7 @@ if $cygwin ; then
             eval `echo args$i`="\"$arg\""
         fi
         i=$((i+1))
-    done
+    done 
     case $i in
         (0) set -- ;;
         (1) set -- "$args0" ;;
