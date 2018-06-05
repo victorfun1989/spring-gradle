@@ -12,7 +12,15 @@ targetCompatibility = 1.8
 dependencies {
     compile "joda-time:joda-time:2.2"
     testCompile "junit:junit:4.12"
-    classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.+')
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.+')
+    }
 }
 
 jar {
