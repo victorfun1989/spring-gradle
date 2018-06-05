@@ -1,6 +1,5 @@
 apply plugin: 'java'
 apply plugin: 'application'
-apply plugin: 'com.jfrog.artifactory'
 mainClassName = 'hello.HelloWorld'
 
 repositories {
