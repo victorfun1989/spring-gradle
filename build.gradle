@@ -14,15 +14,6 @@ dependencies {
     testCompile "junit:junit:4.12"
 }
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.+')
-    }
-}
-
 jar {
     baseName = "spring-gradle"
     version = "0.1.0"
